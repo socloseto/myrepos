@@ -21,11 +21,10 @@
 @import 'base/global';
 /* Components */
 
+/* sections */
+@import 'sections/header';
 /* Browser specific styles */
 @import 'dirty/hacks';
-
-@import 'sections/header';
-
 
 /* Demo Page styles */
 /*@import 'demo';*/

@@ -245,16 +245,17 @@ body {
 }
 
 /* Components */
-/* Browser specific styles */
-/**
- * Dirty hacks, yes internet explorer, we are looking at you
-*/
+/* sections */
 .header-main {
   background: url(../images/design/header-top.0758ca.jpg);
   background-size: cover;
   min-height: 100vh;
 }
 
+/* Browser specific styles */
+/**
+ * Dirty hacks, yes internet explorer, we are looking at you
+*/
 /* Demo Page styles */
 /*@import 'demo';*/
 /* Main styles */
