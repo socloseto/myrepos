@@ -17,10 +17,18 @@
 
 /* Vendor */
 
+/* Global */
+@import 'base/global';
 /* Components */
 
 /* Browser specific styles */
 @import 'dirty/hacks';
 
+@import 'sections/header';
+
+
 /* Demo Page styles */
-@import 'demo';
+/*@import 'demo';*/
+
+/* Main styles */
+@import 'main';
