@@ -15,6 +15,7 @@
 /* Paths */
 /* Grid setup */
 /* Colour palette */
+/*Design colors*/
 /* Components */
 /* CSS Reset */
 html,
@@ -244,12 +245,118 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1046px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 36px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  border: 1px solid;
+  -webkit-transition: color 0.5s ease, background-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.button-rounded {
+  border-radius: 37px;
+}
+.button-primary {
+  background-color: #FFA62B;
+  border-color: #FFA62B;
+  color: #fff;
+}
+.button-primary:hover {
+  color: #FFA62B;
+  background-color: transparent;
+}
+.button-secondary {
+  background-color: transparent;
+  border-color: #00A0C1;
+  color: #00A0C1;
+}
+.button-secondary:hover {
+  color: #fff;
+  background-color: #00A0C1;
+}
+
 /* Components */
 /* sections */
 .header-main {
   background: url(../images/design/header-top.0758ca.jpg);
   background-size: cover;
+  background-position: top right;
   min-height: 100vh;
+}
+
+.header-bar {
+  height: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-bar_logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #252b42;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.header-bar_logo:hover {
+  opacity: 0.6;
+}
+.header-bar_menu {
+  margin-left: 100px;
+}
+.header-bar_menu-item {
+  display: inline-block;
+  /*
+  &:not(:last-child){
+      margin-right: 21px;
+  }
+  */
+}
+.header-bar_menu-item + .header-bar_menu-item {
+  margin-left: 21px;
+}
+.header-bar_menu-link {
+  color: #737373;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+.header-bar_menu-link:hover {
+  color: #252b42;
+}
+
+.header-hero_title {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  text-transform: uppercase;
+  max-width: 509px;
+}
+.header-hero_descr {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin: 35px 0;
+  max-width: 376px;
 }
 
 /* Browser specific styles */
