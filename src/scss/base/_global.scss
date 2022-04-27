@@ -4,7 +4,19 @@ body{
 .container {
     margin: 0 auto;
     max-width: 1046px;
+
+    &-hero {
+        min-height: calc(100vh - 40px);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
+
 .button {
     display: inline-block;
 
@@ -42,5 +54,13 @@ body{
             color: $white;
             background-color: $secondary-color-1;
         }
+    }
+}
+
+.icon-svg { 
+    fill: $secondary-color-1;
+
+    &:hover {
+        fill: $white;
     }
 }

@@ -2,7 +2,7 @@
     background: url('../images/content/header-top.jpg');
     background-size: cover;
     background-position: top right;
-    min-height: 100vh;
+    min-height: calc(100vh - 40px);
 }
 .header-bar {
     height: 104px;
@@ -34,7 +34,7 @@
             margin-right: 21px;
         }
         */
-        &+&{
+        & + &{
             margin-left: 21px;
            }
     }
@@ -48,34 +48,102 @@
         transition: color .5s ease;
 
         &:hover{
-            color:$text-color;
+            color: $text-color;
         }
     }
 }
-    .header-hero{
-        &_title{
+    .header-hero {
+        margin-top: 80px;
+        margin-bottom: auto;
+    
+        &_title {
             font-weight: 800;
             font-size: 58px;
             line-height: 80px;
             letter-spacing: 0.2px;
-
+            
             color: $text-color;
-
+    
             text-transform: uppercase;
-
+    
             max-width: 509px;
         }
-        &_descr{
+    
+        &_descr {
             font-weight: 500;
             font-size: 20px;
             line-height: 30px;
             letter-spacing: 0.2px;
-
+       
             color: $second-text-color;
-
+    
             margin: 35px 0;
             max-width: 376px;
-
         }
-        
+    }
+    
+    .header {
+        &-bottom{
+          margin-bottom: -20px;
+    
+          &_items{
+            display: flex;
+            margin: 0 -15px;
+            flex-wrap: wrap;
+            row-gap: 15px;
+          }
+          &_item{
+            flex: 1 0 33.333%;
+            padding: 0 15px;
+            min-width: 280px;  
+          }
+        }
+      }
+      
+      @media all and (max-width: 800px) {
+        .item-header {
+            justify-content: center;
+        }
+    }
+
+    .item-header {
+
+        padding: 35px 30px;
+        background-color: $white;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transition: all .5s ease;
+        cursor: default;
+        &:hover{
+            background-color: $secondary-color-1;
+            .item-header_name,
+            .item-header_descr{
+            color: $white;
+            }
+            .item-header_img svg path{
+            fill: $white;
+            }
+        }
+        &_img{
+            margin-bottom: 10px;
+        }
+        &_name{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.1px;
+            color: $text-color;
+            flex-grow: 1;
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
+        &_descr{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: $second-text-color;
+        }
     }
