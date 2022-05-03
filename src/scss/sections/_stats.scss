@@ -1,0 +1,55 @@
+.stats {
+    padding: 215px 0 80px;
+    background-color: $second-background-color;
+        
+      &_boxes{
+        padding-top: 50px;
+        display: flex;
+        margin: 0 -15px;
+        flex-wrap: wrap;
+        row-gap: 15px;
+      }
+      &_box-item{
+        flex: 1 0 25%;
+        padding: 0 15px;
+        min-width: 230px;  
+      }
+    }
+  
+.item-1header {
+
+    padding: 30px 40px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    height: 100%;
+    
+    cursor: default;
+    
+    &_1img{
+        margin-bottom: 10px;
+    }
+    &_1name{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        color: $text-color;
+        flex-grow: 1;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        color: $text-color;
+    }
+    &_1descr{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        white-space: nowrap;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: $second-text-color;
+        
+    }
+}

@@ -1,6 +1,57 @@
 body{
     font-family: Montserrat, sans-serif;
 }
+p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $second-text-color;
+  }
+  
+  [class*=_container] {
+    margin: 0 auto;
+    max-width: 1076px;
+    padding: 0 15px;
+    height: 100%;
+  }
+[class*=_1container] {
+        margin: 0 auto;
+        max-width: 1076px;
+        padding: 0 15px;
+        height: 100%;
+  }
+  [class*=_2container] {
+    margin: 0 auto;
+    max-width: 1076px;
+    padding: 0 15px;
+    height: 100%;
+}
+[class$=_header] {
+    margin: 0 auto;
+    max-width: 510px;
+    text-align: center;
+  }
+  [class$=_1header] {
+    margin: 0 auto;
+    max-width: 510px;
+    text-align: center;
+  }
+  
+  .title-2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $text-color;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 .container {
     margin: 0 auto;
     max-width: 1046px;
@@ -15,7 +66,9 @@ body{
         padding-left: 15px;
         padding-right: 15px;
     }
+
 }
+
 
 .button {
     display: inline-block;
