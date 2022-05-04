@@ -27,6 +27,18 @@
     height: 100%;
     
     cursor: default;
+    transition: all .5s ease;
+        cursor: default;
+        &:hover{
+            background-color: $secondary-color-1;
+            .item-1header_1name,
+            .item-1header_1descr{
+            color: $white;
+            }
+            .item-1header_1img svg path{
+            fill: $white;
+            }
+        }
     
     &_1img{
         margin-bottom: 10px;

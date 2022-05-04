@@ -22,10 +22,11 @@ p {
         height: 100%;
   }
   [class*=_2container] {
-    margin: 0 auto;
+    margin: 137px auto;
     max-width: 1076px;
     padding: 0 15px;
     height: 100%;
+    text-align: center;
 }
 [class$=_header] {
     margin: 0 auto;
@@ -33,7 +34,7 @@ p {
     text-align: center;
   }
   [class$=_1header] {
-    margin: 0 auto;
+    margin: 45px auto;
     max-width: 510px;
     text-align: center;
   }
@@ -42,7 +43,7 @@ p {
     font-weight: 700;
     font-size: 40px;
     line-height: 57px;
-    text-align: center;
+   
     letter-spacing: 0.2px;
     color: $text-color;
     margin-bottom: 20px;

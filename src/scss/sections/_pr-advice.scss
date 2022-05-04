@@ -1,7 +1,12 @@
+.pr-advice_2header{
+  margin-bottom: 45px;
+}
 .swiper__container{
 
 }
 .swiper-slide {
+  display: flex;
+  justify-content: space-between;
 
     width: 230px;
     height: 341px;
@@ -39,12 +44,11 @@
     letter-spacing: 0.2px;
     color: $second-text-color;
     max-width: 179px;
-    ;
+    
 }
   .swiper-slide img {
-    display: flex;
-    justify-content: flex-end;
-  margin-top: 30px;
+   
+    margin-top: 30px;
     height: 138px;
     object-fit: cover;
   }
