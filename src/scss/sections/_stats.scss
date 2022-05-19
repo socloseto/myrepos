@@ -43,7 +43,7 @@
     &_1img{
         margin-bottom: 10px;
     }
-    &_1name{
+    &_numbers{
         font-weight: 700;
         font-size: 24px;
         line-height: 32px;
@@ -64,4 +64,19 @@
         color: $second-text-color;
         
     }
+}
+.value {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: $text-color;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    color: $text-color;
+}
+.item-inline{
+    display: flex;
+    justify-content: center;
 }
